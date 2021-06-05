@@ -5,8 +5,8 @@
 #ifndef IMUSIMWITHPOINTLINE_IMU_H
 #define IMUSIMWITHPOINTLINE_IMU_H
 
-#include <eigen3/Eigen/Core>
-#include <eigen3/Eigen/Geometry>
+#include <Eigen/Core>
+#include <Eigen/Geometry>
 #include <iostream>
 #include <vector>
 
@@ -41,7 +41,7 @@ public:
     Eigen::Vector3d acc_bias_;
 
     Eigen::Vector3d init_velocity_;
-    Eigen::Vector3d init_twb_;
+	Eigen::Vector3d init_twb_;
     Eigen::Matrix3d init_Rwb_;
 
     MotionData MotionModel(double t);

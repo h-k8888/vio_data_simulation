@@ -5,7 +5,7 @@
 #ifndef IMUSIM_PARAM_H
 #define IMUSIM_PARAM_H
 
-#include <eigen3/Eigen/Core>
+#include <Eigen/Core>
 
 class Param{
 
@@ -14,7 +14,7 @@ public:
     Param();
 
     // time
-    int imu_frequency = 200;
+	int imu_frequency = 200;
     int cam_frequency = 30;
     double imu_timestep = 1./imu_frequency;
     double cam_timestep = 1./cam_frequency;
@@ -37,12 +37,10 @@ public:
     double cy = 255;
     double image_w = 640;
     double image_h = 640;
-
-
     // 外参数
+
     Eigen::Matrix3d R_bc;   // cam to body
     Eigen::Vector3d t_bc;     // cam to body
-
 };
 
 

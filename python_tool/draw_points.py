@@ -14,14 +14,14 @@ import transformations as tf
 
 import os
 #filepath=os.path.abspath('.')  #表示当前所处的文件夹的绝对路径
-filepath=os.path.abspath('..')+"/bin"  #表示当前所处的文件夹上一级文件夹的绝对路径
+filepath=os.path.abspath('..')+"/build_hk"  #表示当前所处的文件夹上一级文件夹的绝对路径
 
 point_id=[]
 x=[]
 y=[]
 z=[]                                                                                                
 
-with open(filepath + '/all_points.txt', 'r') as f:
+with open('D:/code/vio_data_simulation-master/build_hk/all_points.txt', 'r') as f:
     data = f.readlines()  #txt中所有字符串读入data  
   
     for line in data:  
